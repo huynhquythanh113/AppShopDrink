@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/giohang"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GiohangFragment">
+
+    <RelativeLayout
+        android:id="@+id/notcart"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/motionsad"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_sentiment_dissatisfied_24"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to make this motion happy!" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/showcart"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:id="@+id/cart_end_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+            <Button
+                android:id="@+id/endorder"
+                app:backGroundColor="#7E7A7A"
+                android:layout_centerHorizontal="true"
+                android:text="End order"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

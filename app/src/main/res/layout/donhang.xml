@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="5dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardUseCompatPadding="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/click"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/iddonhang"
+            android:textSize="20dp"
+            android:text="id don hang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/canhbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_warning_24"
+                android:layout_marginLeft="70dp"/>
+            <TextView
+                android:id="@+id/canhbaotext"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chưa xác nhận"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datedonhang"
+            android:text="ngay gio don hang"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tongtiendonhang"
+                android:text="10000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diachidonhang"
+                android:text="diachi"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

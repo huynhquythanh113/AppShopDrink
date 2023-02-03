@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    tools:context=".ShowProduct"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/anhnen" />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text_menu"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tea original"
+        android:textStyle="bold"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/process_product"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_product"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appshopdrink">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppShopDrink"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme"
+        tools:targetApi="m">
+        <activity
+            android:name=".LichSuDonHang"
+            android:exported="true" />
+        <activity
+            android:name=".Thongtindonhang"
+            android:exported="true" />
+        <activity
+            android:name=".ThayDoiThongtin"
+            android:exported="true" />
+        <activity
+            android:name=".Getlocal"
+            android:exported="true" />
+        <activity
+            android:name=".SubmitOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShowCartOrder"
+            android:exported="true" />
+        <activity
+            android:name=".ShowProduct"
+            android:exported="true" />
+        <activity
+            android:hardwareAccelerated="false"
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:hardwareAccelerated="false"
+            android:name=".ProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity2"
+
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

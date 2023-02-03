@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "640051874193",
+    "project_id": "drink-11011",
+    "storage_bucket": "drink-11011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640051874193:android:e9393e0c125d00073b7230",
+        "android_client_info": {
+          "package_name": "com.example.appshopdrink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640051874193-6rk2opbo13sf68vu352mrcimdkh9t6lf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appshopdrink",
+            "certificate_hash": "7523f3ef561683666a6da6749438d7506f7899e0"
+          }
+        },
+        {
+          "client_id": "640051874193-2fk88ek1uoekfshafue44461stef3lcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMS5q5L4_wvKIICjA2CX98l3uMm7NfrKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640051874193-2fk88ek1uoekfshafue44461stef3lcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
